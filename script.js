@@ -83,7 +83,7 @@ scoreNoBtn1.addEventListener('click', () => {
 
 resetBtn1.addEventListener('click', () => {
     // Ask for confirmation
-    if (confirm("Are you sure you want to the runner on third section?")) {
+    if (confirm("Are you sure you want to reset the runner on third section?")) {
         // If user confirms, execute reset functionality
         counterValue1 = 0;
         runsScored1 = 0;
