@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warrior Baseball</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Warrior Baseball</h1>
+        <div class="counter-container">
+            <label for="counter1"><h4>Runner on third, less than two outs:</h4></label>
+            <input type="number" id="counter1" value="0" readonly>
+            <button id="increment-btn1">+</button>
+            <button id="decrement-btn1">-</button>
+        </div>
+        <div id="score-prompt1" class="score-prompt"><h4>Runner Scored?</h4></div>
+        <div id="score-buttons1" class="score-buttons">
+            <button id="score-yes1">Yes</button>
+            <button id="score-no1">No</button>
+        </div>
+        <div id="score-container1" class="score-container">
+            <label for="score-counter1"><h4>Runs Scored:</h4></label>
+            <span id="score-counter1" class="score-counter">0</span>
+        </div>
+        <button id="reset-btn1">Reset</button>
+    </div>
+
+    <div class="container">
+        <div class="counter-container">
+            <label for="counter2"><h4>Runner on second, no outs:</h4></label>
+            <input type="number" id="counter2" value="0" readonly>
+            <button id="increment-btn2">+</button>
+            <button id="decrement-btn2">-</button>
+        </div>
+        <div id="score-prompt2" class="score-prompt"><h4>Runner Scored?</h4></div>
+        <div id="score-buttons2" class="score-buttons">
+            <button id="score-yes2">Yes</button>
+            <button id="score-no2">No</button>
+        </div>
+        <div id="score-container2" class="score-container">
+            <label for="score-counter2"><h4>Runs Scored:</h4></label>
+            <span id="score-counter2" class="score-counter">0</span>
+        </div>
+        <button id="reset-btn2">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
