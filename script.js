@@ -82,15 +82,22 @@ scoreNoBtn1.addEventListener('click', () => {
  });
 
 resetBtn1.addEventListener('click', () => {
-    counterValue1 = 0;
-    runsScored1 = 0;
-    localStorage.setItem('counterValue1', counterValue1);
-    localStorage.setItem('runsScored1', runsScored1);
-    updateCounterDisplay1();
-    updateScoreCounterDisplay1();
-    resetScorePrompt1();
-    enableButtons1();
-    decrementBtnClicked1 = false;
+    // Ask for confirmation
+    if (confirm("Are you sure you want to the runner on third section?")) {
+        // If user confirms, execute reset functionality
+        counterValue1 = 0;
+        runsScored1 = 0;
+        localStorage.setItem('counterValue1', counterValue1);
+        localStorage.setItem('runsScored1', runsScored1);
+        updateCounterDisplay1();
+        updateScoreCounterDisplay1();
+        resetScorePrompt1();
+        enableButtons1();
+        decrementBtnClicked1 = false;
+    } else {
+        // If user cancels, do nothing
+        return;
+    }
 });
 
 
@@ -138,15 +145,22 @@ scoreNoBtn2.addEventListener('click', () => {
  });
 
 resetBtn2.addEventListener('click', () => {
-    counterValue2 = 0;
-    runsScored2 = 0;
-    localStorage.setItem('counterValue2', counterValue2);
-    localStorage.setItem('runsScored2', runsScored2);
-    updateCounterDisplay2();
-    updateScoreCounterDisplay2();
-    resetScorePrompt2();
-    enableButtons2();
-    decrementBtnClicked2 = false;
+    // Ask for confirmation
+    if (confirm("Are you sure you want to reset the runner on second section?")) {
+        // If user confirms, execute reset functionality
+        counterValue2 = 0;
+        runsScored2 = 0;
+        localStorage.setItem('counterValue2', counterValue2);
+        localStorage.setItem('runsScored2', runsScored2);
+        updateCounterDisplay2();
+        updateScoreCounterDisplay2();
+        resetScorePrompt2();
+        enableButtons2();
+        decrementBtnClicked2 = false;
+    } else {
+        // If user cancels, do nothing
+        return;
+    }
 });
 
 
